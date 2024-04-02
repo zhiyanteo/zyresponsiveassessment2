@@ -394,7 +394,6 @@ border-left: 1px solid #e7e7e7;
 display: grid;
 grid-template-rows: repeat(3, 1fr);
 gap: 3px;
-margin-top: 2rem;
 }
 
 .info-block{
@@ -405,7 +404,7 @@ margin-top: 2rem;
 	border-bottom: 1px solid #e7e7e7;
 	border-top: 1px solid #e7e7e7;
 	align-items: center;
-	border: 1px solid black;
+	border: 1px solid #e7e7e7;
 }
 
 .info-block img{
@@ -472,3 +471,69 @@ color: #30a9de;
 }
 
 /* END OF PRACTICE */
+
+
+
+/* START OF LEARNING SECTION */
+
+/* DESKTOP VIEW */
+
+.learning {
+	/* display:grid; */
+	grid-column: full--start / full--end;
+}
+
+.learning h1 {
+	text-align: center;
+	font-size: 2.5rem;
+	padding: 2rem;
+}
+
+.learning-card-container {
+	display: grid;
+	grid-column: full--start / full--end;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.learning-card {
+	margin: 1rem;
+	background-color: #f0f0f0;
+}
+
+.learning-card h3{
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+	padding-top: 1rem;
+}
+
+.learning-card h4 {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+	padding-top: 1rem;
+}
+
+.learning-card p {
+	padding-top: 1rem;
+	padding-bottom: 1.5rem;
+}
+
+.learning-card img {
+	width: 100%;
+}
+
+.learning-card h3, .learning-card h4, .learning-card p {
+	padding-left: 1rem;
+}
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 37.5em), (max-width: 48em){
+	.learning {
+		display: none;
+	}
+}
+
+
+/* END OF LEARNING SECTION */
+
+
+ 
