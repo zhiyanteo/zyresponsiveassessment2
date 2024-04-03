@@ -492,7 +492,7 @@ color: #30a9de;
 .learning-card-container {
 	display: grid;
 	grid-column: full--start / full--end;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .learning-card {
@@ -524,16 +524,155 @@ color: #30a9de;
 .learning-card h3, .learning-card h4, .learning-card p {
 	padding-left: 1rem;
 }
+
+.learning-mobile{
+	display:none;
+}
 /* MOBILE VIEW */
 
 @media only screen and (max-width: 37.5em), (max-width: 48em){
 	.learning {
 		display: none;
 	}
+
+	.learning-mobile {
+		display: grid;
+		grid-column: full--start / full--end;
+		text-align: center;
+		font-size: 1.6rem;
+		margin-top: 4rem;
+	}
+
+	.learning-mobile ul li {
+		background-color: #8e8e8e;
+		font-size: 1.5rem;
+		margin-bottom: 0.3rem;
+		padding-top: 1rem;
+		padding-left: 1rem;
+		padding-bottom: 1.5rem;
+		margin-top: 1rem;
+		text-align: left;
+
+	}
+	
+	
+
+	
+	
 }
 
 
 /* END OF LEARNING SECTION */
 
+
+/* START OF THESIS SECTION */
+
+/* DESKTOP VIEW */
+
+.thesis {
+	grid-column: full--start / full--end;
+}
+
+.thesis h1 {
+	text-align: center;
+	font-size: 2.5rem;
+	padding: 2rem;
+}
+
+.thesis-container {
+	display: grid;
+	grid-column: full--start / full--end;
+	grid-template-columns: 60% 40%
+}
+
+.thesis-container-2 video {
+	width: 100%
+}
+
+.thesis-container-2 h3 {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+	padding-top: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.thesis-container-2 p {
+	padding-top: 1rem;
+	padding-bottom: 2.5rem;
+	font-size: 1.5rem;
+}
+
+
+.thesis-container-3 {
+display: grid;
+background-color: lightgray; 
+}
+
+.thesis-card {
+	display: grid;
+	grid-column: full--start / full--end;
+	grid-template-columns: 30% 60%;
+	border: 1px solid;
+
+}
+
+.thesis-card img {
+	width: 100%;
+	margin: 1rem;
+	padding-right: 3rem;
+}
+
+.thesis-card h3{
+	font-size: 2rem;
+	padding-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+
+.thesis-card p {
+	padding-top: 0.5rem;
+	padding-bottom: 2rem;
+	font-size: 1.5rem;
+}
+
+.thesis-mobile{
+	display:none;
+}
+
+
+
+/* MOBILE VIEW */
+
+
+@media only screen and (max-width: 37.5em), (max-width: 48em){
+	.thesis {
+		display: none;
+	}
+
+	.thesis-mobile {
+		display: grid;
+		grid-column: full--start / full--end;
+		text-align: center;
+		font-size: 1.6rem;
+		margin-top: 4rem;
+		padding-bottom: 2.5rem;
+	}
+
+	.thesis-mobile h1 {
+		padding-bottom: 1rem;
+	}
+
+	.thesis-mobile video {
+width: 100%;
+	}
+	
+	
+
+	
+	
+}
+
+
+/* END OF THESIS SECTION */
 
  
